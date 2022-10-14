@@ -1,4 +1,5 @@
 const model = document.querySelector(".model");
+const modelContent = document.querySelector(".model-content");
 const close = document.querySelector(".close");
 const btn = document.getElementById("btn");
 
@@ -12,5 +13,9 @@ function openModel(e) {
 }
 
 function closeModel() {
-  model.style.display = "none";
+  modelContent.classList.add("slide-up")
+  setTimeout(() => {
+    model.style.display = "none";
+    modelContent.classList.remove("slide-up")
+  }, 500)
 }
