@@ -5,7 +5,6 @@ const btn = document.getElementById("btn");
 
 btn.addEventListener("click", openModel);
 close.addEventListener("click", closeModel);
-model.addEventListener("click", closeModel);
 
 function openModel(e) {
   e.preventDefault();
